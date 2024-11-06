@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --base-blue: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
+    --primary: #ebf2fe;
+    --seondary: #373737;
+    --white: #fff;
+}
