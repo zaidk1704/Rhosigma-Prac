@@ -8,3 +8,6 @@
     --seondary: #373737;
     --white: #fff;
 }
+.abcde{
+    background-color: var(--base-blue);
+}
