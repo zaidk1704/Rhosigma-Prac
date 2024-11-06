@@ -631,14 +631,3 @@ video {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
 }
-
-:root{
-  --base-blue: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
-  --primary: #ebf2fe;
-  --seondary: #373737;
-  --white: #fff;
-}
-
-.abcde{
-  background-color: var(--base-blue);
-}
