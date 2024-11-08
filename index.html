@@ -11,43 +11,50 @@
     <!-- <h1 class="text-red-700 text-5xl font-extrabold">This is Testing text.........</h1> -->
      <!------------ Navbar Section ------------->
 
-     <div class="w-full p-5 px-20 flex justify-between items-center">
+     <div class="w-full p-5 px-20 flex justify-between items-center gap-36">
         <div class="w-1/4"><a href="#"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"></a></div>
-        <div class="w-2/4">
-            <ul class="flex justify-evenly">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Approach</a></li>
-                <li><a href="#">Industries</a></li>
-            </ul>
-        </div>
-        <div class="w-1/4">
-            <div class="w-full flex justify-center items-center">
-                <button class="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-xl">Contact</button>
-            </div>
+
+
+        <div class="w-full flex justify-evenly flex-row-reverse md:flex-row gap-10 md:gap-36">
+          <button id="menu-toggle" class=" text-gary-600 md:hidden focus:outline-none items-center">
+            <svg class="w-6 h-6 bg-gradient-to-r from-cyan-500 to-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <div id="menu" class="hidden md:flex w-full md:w-2/4 mt-4 md:mt-0">
+              <ul class="flex flex-col md:flex-row items-center md:justify-evenly w-full space-y-4 md:space-y-0">
+                  <li><a href="#" class="uppercase tracking-wide pii">About Us</a></li>
+                  <li><a href="#" class="uppercase tracking-wide pii">Services</a></li>
+                  <li><a href="#" class="uppercase tracking-wide pii">Approach</a></li>
+                  <li><a href="#" class="uppercase tracking-wide pii">Industries</a></li>
+              </ul>
+          </div>
+          <div class="w-full md:w-1/4 flex justify-end md:justify-end items-center md:items-start mt-4 md:mt-0">
+              <button class="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 pii tracking-wide text-white rounded-xl">Contact</button>
+          </div>
         </div>
      </div>
 
      <!--------- Technologies we use ---------->
      <div class="w-full h-[900px]">
         <div class="w-11/12 h-full m-auto py-10 rounded-3xl bg-gray-200">
-            <h2 class="uppercase w-11/12 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent m-auto text-4xl font-medium tracking-wide">Technologies we use</h2>
+            <h2 class="uppercase w-11/12 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent m-auto h2 font-medium tracking-wide">Technologies we use</h2>
             <div class="w-11/12 h-80 m-auto mt-10 grid grid-cols-5 grid-rows-3 gap-5">
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-white flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500">Database</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">Printed circuit board</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">graphical user interface</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">language</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">platform</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">development</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">operating systems</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">communication protocol</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">wired interfaces</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">wireless interfaces</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">display</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">touch</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">memory</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">processor</div>
-                <div class="w-30 h-20 capitalize text-2xl font-medium text-cyan-500 flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">sensors</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-white flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500">Database</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">Printed circuit board</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">graphical user interface</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">language</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">platform</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">development</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">operating systems</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">communication protocol</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">wired interfaces</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">wireless interfaces</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">display</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">touch</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">memory</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">processor</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">sensors</div>
             </div>
 
             <div class="mySwiper w-11/12 h-full m-auto mt-20 ">

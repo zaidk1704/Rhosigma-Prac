@@ -7,7 +7,43 @@
     --primary: #ebf2fe;
     --seondary: #373737;
     --white: #fff;
+    --h1:clamp(1.563rem, 1.313vw + 1.3rem, 2.875rem);
+    --h2:clamp(1.5rem, 0.75vw + 1.35rem, 2.25rem);
+    --h3:clamp(1.375rem, 0.5vw + 1.275rem, 1.875rem);
+    --h4:clamp(1.25rem, 0.313vw + 1.188rem, 1.563rem);
+    --h5:clamp(1.125rem, 0.25vw + 1.075rem, 1.375rem);
+    --h6:clamp(1rem, 0.25vw + 0.95rem, 1.25rem);
+    --pi:clamp(1rem, 0.5vw + 0.9rem, 1.5rem);
+    --pii:clamp(1rem, 0.125vw + 0.975rem, 1.125rem);
+    --ant:clamp(1rem, 0.125vw + 0.975rem, 1.125rem);
 }
 .base-color{
     background-color: var(--base-blue);
+}
+.h1{
+    font-size: var(--h1);
+}
+.h2{
+    font-size: var(--h2);
+}
+.h3{
+    font-size: var(--h3);
+}
+.h4{
+    font-size: var(--h4);
+}
+.h5{
+    font-size: var(--h5);
+}
+.h6{
+    font-size: var(--h6);
+}
+.pi{
+    font-size: var(--pi);
+}
+.pii{
+    font-size: var(--pii);
+}
+.ant{
+    font-size: var(--ant);
 }
