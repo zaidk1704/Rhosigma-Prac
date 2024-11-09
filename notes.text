@@ -1,4 +1,5 @@
 font size: min-320px --- to --- max-1920 
+hlg--> 30px to 48px
 h1 --> 25px to 46px
 h2 --> 24px to 36px
 h3 --> 22px to 30px
@@ -18,6 +19,7 @@ a --> 16px to 18px
     --primary: #ebf2fe;
     --seondary: #373737;
     --white: #fff;
+    --hlg:clamp(1.875rem, 1.125vw + 1.65rem, 3rem);
     --h1:clamp(1.563rem, 1.313vw + 1.3rem, 2.875rem);
     --h2:clamp(1.5rem, 0.75vw + 1.35rem, 2.25rem);
     --h3:clamp(1.375rem, 0.5vw + 1.275rem, 1.875rem);
@@ -30,6 +32,9 @@ a --> 16px to 18px
 }
 .base-color{
     background-color: var(--base-blue);
+}
+.hlg{
+    font-size: var(--hlg);
 }
 .h1{
     font-size: var(--h1);

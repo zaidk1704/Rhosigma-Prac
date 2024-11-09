@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+</head>
+
+<body>
+    <!------- Navbar Section -------->
+
+    <div class="w-full p-5 px-20 flex justify-between items-center">
+        <div class="w-1/4"><a href="#"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"></a></div>
+
+        <div class="w-full flex justify-evenly flex-row-reverse md:flex-row gap-10 md:gap-36">
+            <button id="menu-toggle" class=" text-gary-600 md:hidden focus:outline-none items-center">
+                <svg class="w-6 h-6 bg-gradient-to-r from-cyan-500 to-blue-500" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div id="menu" class="hidden md:flex w-full md:w-2/4 mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row items-center md:justify-evenly w-full space-y-4 md:space-y-0">
+                    <li><a href="about.html" class="uppercase tracking-wide pii">About Us</a></li>
+                    <li><a href="services.html" class="uppercase tracking-wide pii">Services</a></li>
+                    <li><a href="#" class="uppercase tracking-wide pii">Approach</a></li>
+                    <li><a href="#" class="uppercase tracking-wide pii">Industries</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 flex justify-end md:justify-end items-center md:items-start mt-4 md:mt-0">
+                <button
+                    class="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 pii tracking-wide text-white rounded-xl">Contact</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------- Services Hero ----------->
+    <div class="w-full h-[300px] md:h-[450px] bg00">
+        <div class="service-banner-img w-11/12 h-3/4 m-auto mt-10 md:mt-16 rounded-3xl flex justify-center items-center">
+            <h1 class="uppercase h1 text-white font-bold tracking-wide">services</h1>
+        </div>
+    </div>
+</body>
+
+</html>
