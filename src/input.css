@@ -2,33 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.first-container {
-  width: 95%;
-  margin: 0px auto;
-}
-
-:root {
-  --h3: clamp(1.563rem, 0.25vw + 1.512rem, 1.813rem);
-  --h2: clamp(1rem, 0.563vw + 0.887rem, 1.563rem);
-
-  --white: black;
-
-}
-
-.h3 {
-  font-size: var(--h3);
-}
-.h2 {
-  font-size: var(--h2);
-}
-
-.fc {
-  color: var(--white);
-}
-
-/* .bg {
-  background-color: var(--bg);
-} */
 :root{
     --base-blue: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
     --primary: #ebf2fe;
