@@ -6,13 +6,9 @@ h3 --> 22px to 30px
 h4 --> 20px to 25px
 h5 --> 18px to 22px
 h6 --> 16px to 20px
-
 P1 --> 16px to 24px
 P2 --> 16px to 18px
-
 a --> 16px to 18px
-
-
 
 :root{
     --base-blue: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
