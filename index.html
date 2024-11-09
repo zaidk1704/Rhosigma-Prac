@@ -1,30 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="src/input.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="src/input.css" />
 </head>
+
 <body>
-     <!------------ Navbar Section ------------->
-     
-     <div class="w-full p-5 px-20 flex justify-between items-center">
-        <div class="w-1/4"><a href="#"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"></a></div>
-        <div class="w-2/4">
-            <ul class="flex justify-evenly">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Approach</a></li>
-                <li><a href="#">Industries</a></li>
-            </ul>
+  <!------------ Navbar Section ------------->
+
+  <div class="w-full p-5 px-20 flex justify-between items-center gap-36">
+    <div class="w-1/4"><a href="#"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"></a></div>
+
+
+    <div class="w-full flex justify-evenly flex-row-reverse md:flex-row gap-10 md:gap-36">
+      <button id="menu-toggle" class=" text-gary-600 md:hidden focus:outline-none items-center">
+        <svg class="w-6 h-6 bg-gradient-to-r from-cyan-500 to-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <div id="menu" class="hidden md:flex w-full md:w-2/4 mt-4 md:mt-0">
+          <ul class="flex flex-col md:flex-row items-center md:justify-evenly w-full space-y-4 md:space-y-0">
+              <li><a href="#" class="uppercase tracking-wide pii">About Us</a></li>
+              <li><a href="#" class="uppercase tracking-wide pii">Services</a></li>
+              <li><a href="#" class="uppercase tracking-wide pii">Approach</a></li>
+              <li><a href="#" class="uppercase tracking-wide pii">Industries</a></li>
+          </ul>
+      </div>
+      <div class="w-full md:w-1/4 flex justify-end md:justify-end items-center md:items-start mt-4 md:mt-0">
+          <button class="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 pii tracking-wide text-white rounded-xl">Contact</button>
+      </div>
+    </div>
+ </div>
+
+
+
+ 
+  <section class="bg h-[75vh] flex justify-center gap-7 items-center">
+    <div class="py-0 px-[60px] flex justify-center items-center gap-2">
+      <div class="w-[40%] h-[70%] flex flex-col items-center gap-[20px] ">
+        <h1 class="h3 fc-w text-center font-semibold leading-tight border-1 border-black">
+          Unleash Innovation with Rhosigma
+        </h1>
+        <p class="p-2 fc-w leading-tight font-medium text-center w-[95%]">
+          Transforming Ideas into Reality through Cutting-edge Electronic
+          Product Technology Development and Design Engineering.
+        </p>
+        <div class="text-center border bg-white text-[#2e5bab] py-2 px-9 w-fit m-auto rounded-lg font-semibold">
+          <a href="/services">Discover Services</a>
         </div>
-        <div class="w-1/4">
-            <div class="w-full flex justify-center items-center">
-                <button class="px-10 py-3 abcde border border-red-600">Contact</button>
+      </div>
+      <div class="w-[20%] h-[70%] flex justify-center border-1 border-black">
+        <img class="h-60 w-60" src="images/hero-image.webp" alt="image" widht="300" height="300" />
+      </div>
+      <div class="w-[40%] h-[70%] flex flex-col justify-center items-center gap-5 border-1 border-black">
+        <p class="h2 font-semibold fc-w">Innovative Excellence</p>
+        <p class="h2 font-semibold fc-w">Uncompromising Quality</p>
+        <p class="h2 font-semibold fc-w">Customer-Focused Dedication</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-we_areContainer pt-[50px] pb-[20px] flex flex-col gap-12">
+    <h2 class="h1">WHO WE ARE</h2>
+    <div class="grid grid-cols-2">
+      <div class="section-first flex flex-col gap-[30px]">
+        <p class="fc fs font-medium ff">
+          Where innovation meets excellence in the world of electronic
+          technology. Established with a passion for advancing the boundaries
+          of what's possible.
+        </p>
+        <p class="w-[88%] ff fc fs font-medium">
+          We are a dynamic company specializing in Electronic Product
+          Technology Development, Manufacturing, Aftersales Services, Supply
+          Chain Management, Design Engineering, Internet of Things (IoT),
+          Electronic Manufacturing Services (EMS), Defense, Telecommunication,
+          and Energy.
+        </p>
+        <button
+          class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] px-7 rounded-lg w-[37%] font-semibold fc-w fs">
+          Learn More
+        </button>
+      </div>
+      <div class="section-second grid grid-cols-2 gap-3">
+        <img class="rounded-lg w-[250px] h-[200px] object-cover" src="images/image1.webp" alt="image1" width="300"
+          height="200" />
+        <img class="rounded-lg w-[250px] h-[200px] object-cover" src="images/image2.webp" alt="image2" width="300"
+          height="200" />
+        <video class="rounded-lg w-[250px] h-[200px] object-cover" autoplay muted playsinline loop>
+          <source src="videos/drone.mp4" type="video/mp4" />
+        </video>
+        <img class="rounded-lg w-[250px] h-[200px] object-cover" src="images/image3.webp" alt="image3" width="300"
+          height="200" />
+      </div>
+    </div>
+  </section>
+
+  <section class="ccontainer pr-color mt-[50px] rounded-[20px] pb-[50px]">
+    <div class="ccontainer-content pt-[50px] flex flex-col">
+      <h3 class="h1 mb-[20px]">WHAT WE DO</h3>
+      <p class="fc fs font-medium w-[90%]">
+        Rhosigma is your go-to partner for electronic innovation. We're not
+        just a service provider; we're your dedicated ally, ensuring your
+        electronic aspirations become a reality with precision and innovation.
+      </p>
+
+      <div class="grid grid-cols-2 gap-5 mt-[50px] mb-[50px]">
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/firmware.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">Firmware Development</p>
+            <p class="fs">
+              Elevate your devices with bespoke firmware solutions tailored to
+              optimize performance and functionality.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4 p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/ai-ml.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2 gap-y-5">
+            <p class="h4 font-semibold ptag-c lineH">AI / ML</p>
+            <p class="fs line-clamp-5">
+              From concept to market, we bring your vision to life with
+              comprehensive and efficient product development services.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit gap-y-5"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4 p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/reverse-engineering_6.webp" alt="image6"
+            width="280" height="200" />
+          <div class="flex flex-col gap-2 gap-y-5">
+            <p class="h4 font-semibold ptag-c lineH">Reverse Engineering</p>
+            <p class="fs line-clamp-5">
+              Unlock the potential of existing technology with our expertise in
+              reverse engineering, revitalizing and enhancing your products.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/hardware-development.webp" alt="image6"
+            width="280" height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">Hardware Development</p>
+            <p class="fs line-clamp-5">
+              Unleash innovation through our meticulous hardware development,
+              crafting the backbone of cutting-edge electronic solutions.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/revolutionizing.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">HART</p>
+            <p class="fs line-clamp-5">
+              Unleash innovation through our meticulous hardware development,
+              crafting the backbone of cutting-edge electronic solutions.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+
+      </div>
+      <button
+        class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit">All
+        Services</button>
+    </div>
+    </div>
+  </section>
+
+
+  <footer class="ccontainer pr-color mt-[50px] rounded-[20px] h-[1000px]">
+    <div class="grid grid-cols-[0.7fr_1fr_0.9fr_2fr] gap-[30px] justify-end ccontainer-content pt-[75px] pb-[75px]">
+      <p class="font-semibold fs"> Follow Our Social Networks</p>
+      <div class="flex gap-[10px]">
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img class="" src="images/facebook-svgrepo-com.svg" alt="facebook-svgrepo-com" width="30" height="30">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img src="images/linkedin-svgrepo-com.svg" alt="linkedin-svgrepo-com" width="24" height="24">
+
+        </div>
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img src="images/youtube-you-tube-video-svgrepo-com.svg" alt="you-tube-image" width="24" height="24">
+
+        </div>
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img src="images/youtube-you-tube-video-svgrepo-com.svg" alt="you-tube-image" width="24" height="24">
+
+        </div>
+      </div>
+      <p class="font-semibold fs">Be the First One to Hear About Updates</p>
+      <div class="mr-[20px]">
+        <label for="email">Email:</label>
+        <button
+          class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit ml-[40px]">Subscribe</button>
+      </div>
+
+
+    </div>
+    <hr class="footer-line footer-hr">
+  </footer>
+     
+
+     <!--------- Technologies we use ---------->
+     <div class="w-full h-[900px]">
+        <div class="w-11/12 h-full m-auto py-10 rounded-3xl bg-gray-200">
+            <h2 class="uppercase w-11/12 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent m-auto h2 font-medium tracking-wide">Technologies we use</h2>
+            <div class="w-11/12 h-80 m-auto mt-10 grid grid-cols-5 grid-rows-3 gap-5">
+                <div class="w-30 h-20 capitalize h3 leading-7 text-white flex items-center pl-5 tracking-normals rounded-2xl hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500">Database</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">Printed circuit board</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">graphical user interface</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">language</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">platform</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">development</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">operating systems</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">communication protocol</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">wired interfaces</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">wireless interfaces</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">display</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">touch</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">memory</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">processor</div>
+                <div class="w-30 h-20 capitalize h3 leading-7 text-cyan-500 flex items-center p-5 rounded-2xl hover:text-white bg-white hover:bg-gradient-to-r from-cyan-500 to-blue-500">sensors</div>
+            </div>
+
+            <div class="mySwiper w-11/12 h-full m-auto mt-20 ">
+                <div class="swiper-wrapper flex gap-5">
+                  <div class="text-center text-3xl w-1/5 h-72 bg-white rounded-3xl flex justify-center items-center">
+                    <img src="asst/database-5.webp" alt="">
+                  </div>
+                  <div class="text-center text-3xl w-1/5 h-72 bg-white rounded-3xl flex justify-center items-center">
+                    <img src="asst/database-2.webp" alt="">
+                  </div>
+                  <div class="text-center text-3xl w-1/5 h-72 bg-white rounded-3xl flex justify-center items-center">
+                    <img src="asst/database-3.webp" alt="">
+                  </div>
+                  <div class="text-center text-3xl w-1/5 h-72 bg-white rounded-3xl flex justify-center items-center">
+                    <img src="asst/database-4.webp" alt="">
+                  </div>
+                  <div class="text-center text-3xl w-1/5 h-72 bg-white rounded-3xl flex justify-center items-center">
+                    <img src="asst/database.webp" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+     </div>
+
+     <!---------- Unlocking Unparalleled Value --------->
+
+     <div class="w-full h-[750px] border border-red-500">
+        <div class="w-11/12 h-full m-auto py-10 rounded-3xl">
+            <h2 class="uppercase w-11/12 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent m-auto text-4xl font-medium tracking-wide">Unlocking Unparalleled value</h2>
+            <p class="w-11/12 m-auto text-xl text-justify mt-10 leading-8">At Rhosigma, innovation meets precision, and success is a shared journey. Our value proposition goes beyond conventional offerings, bringing forth a unique blend of innovation, precision, and client-centricity. By leveraging cutting-edge technologies, we deliver a strategic advantage, ensuring that your projects are future-ready.
+            </p>
+            <div class="w-11/12 m-auto flex flex-row gap-5 mt-10">
+                <div class="">
+                    <img width="300" height="200" src="asst/firmware-development.webp" class="rounded-2xl" alt="">
+                </div>
+                <div class="">
+                    <img width="300" height="200" src="asst/who-we-are-img-2_6.webp" class="rounded-2xl" alt="">
+                </div>
+                <div class="">
+                    <video width="300" height="200" src="asst/drone.mp4" class="rounded-2xl" autoplay muted playsinline loop></video>
+                </div>
+                <div class="">
+                    <img width="300" height="200" src="asst/who-we-are-img-3_6.webp" class="rounded-2xl" alt="">
+                </div>
+            </div>
+            <p class="w-11/12 m-auto text-xl text-justify mt-10 leading-8">Our tailored solutions are designed to meet the specific needs of each client, providing not only services but a partnership grounded in excellence. With a client-centric approach at our core, Rhosigma redefines industry standards, offering transformative experience. Choose Rhosigma for unparalleled value that goes beyond expectations.
+            </p>
+            <div class="w-11/12 m-auto mt-10">
+                <a href="#"><button class="bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl font-medium rounded-xl px-10 py-2 text-white">Let's Connect</button></a>
             </div>
         </div>
      </div>
+
+     <!----------- Form Section ------------>
+
+     <div class="w-full h-full bg-gray-300 border border-green-500">
+        <div class="w-11/12 h-full m-auto bg-gray-300 flex">
+            <div class="w-1/2 h-full border border-black">
+                <h2 class="capitalize text-5xl mt-10 font-medium bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">ready to get your challenge solved ?
+                </h2>
+                <p class="capitalize text-2xl mt-20">fill out the form, our team will connect with you!</p>
+                <div class="mt-40">
+                    <img src="asst/get-quote.webp" alt="">
+                </div>
+            </div>
+            <div class="w-1/2 h-full border border-red-600"></div>
+        </div>
+     </div>
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 5,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
 </body>
+
 </html>
