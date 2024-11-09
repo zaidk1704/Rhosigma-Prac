@@ -1,40 +1,136 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .first-container {
-  width: 95%;
+  width: 90%;
   margin: 0px auto;
 }
 
+.who-we_areContainer {
+  width: 76%;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.what-we-do-container {
+  width: 85%;
+  margin: 0px auto;
+}
+
+.ccontainer {
+  width: 85%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ccontainer-content {
+  width: 91%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 :root {
-  --h3: clamp(1.563rem, 0.25vw + 1.512rem, 1.813rem);
+  --accent: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
   --h2: clamp(1rem, 0.563vw + 0.887rem, 1.563rem);
+  --h3: clamp(1.563rem, 0.25vw + 1.512rem, 1.813rem);
+  --h4: clamp(1.0625rem, 1.0245rem + 0.1899vw, 1.25rem);
+  --base-blue: #2e5bab;
+  --primary: #ebf2fe;
+  --secondary: #373737;
+  --white: #fff;
+  --black: black;
+  --button-color: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
 
-  --white: black;
+  --p-2: calc(clamp(1rem, 0.125vw + 0.975rem, 1.125rem));
+  --family-font: "Montserrat", sans-serif;
+}
 
+.h1 {
+  background: var(--accent);
+  background-clip: text;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.btn-bg {
+  background-color: var(--button-color);
 }
 
 .h3 {
   font-size: var(--h3);
 }
+
 .h2 {
   font-size: var(--h2);
 }
 
-.fc {
+.h4 {
+  font-size: var(--h4);
+}
+
+.fs {
+  font-size: var(--p-2);
+  color: var(--secondary);
+}
+
+
+.fc-w {
   color: var(--white);
 }
 
-/* .bg {
-  background-color: var(--bg);
-} */
-:root{
-    --base-blue: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
-    --primary: #ebf2fe;
-    --seondary: #373737;
-    --white: #fff;
+.ptag-c {
+  background: var(--accent);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-.abcde{
-    background-color: var(--base-blue);
-}   
+
+.bg {
+  background-color: var(--base-blue);
+}
+
+.ff {
+  font-family: var(--family-font);
+}
+
+.pr-color {
+  background-color: var(--primary);
+}
+
+.lineH {
+  line-height: normal;
+}
+
+.bborder {
+  border: 1px solid black;
+}
+
+.imageH {
+  height: 181px;
+  width: 180px;
+}
+
+
+.footer-hr{
+  border: 1px solid white;
+}
+
+.footer-line{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}

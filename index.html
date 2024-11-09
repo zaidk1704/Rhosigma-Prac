@@ -1,64 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="src/output.css" />
-  </head>
 
-  <body>
-    <!-- <h1 class="text-red-700 text-5xl font-extrabold">This is Testing text.........</h1> -->
-    <!-- <h2 class="text-cyan-400 text-5xl">This is heading 2</h2> -->
-
-    <section class="border-2 border-black h-[300px] flex justify-center gap-5">
-      <!-- <div class="first-container w-[33%] border-2 border-blue-300"> -->
-      <!-- <div class="first-container-content border-1 border-black">
-          <h1 class="h3 fc text-center font-semibold  leading-tight">
-            Unleash Innovation with Rhosigma
-          </h1>
-          <p class="p-2 fc w-[38%] text-center leading-tight font-semibold">
-            Transforming Ideas into Reality through Cutting-edge Electronic
-            Product Technology Development and Design Engineering.
-          </p>
-          <a href="/services" class="border-2 border-black">Discover Services</a>
-        </div> -->
-      <!-- </div> -->
-
-     <div class="first-container flex justify-center gap-5">
-        <div class="border-2 border-black w-[33%]">
-            <h1 class="h3 fc text-center font-semibold  leading-tight">
-                Unleash Innovation with Rhosigma
-              </h1>
-        </div>
-        <div class="border-2 border-black w-[33%]"></div>
-        <div class="border-2 border-black w-[33%]"></div>
-     </div>
-    </section>
-  </body>
-</html>
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="src/input.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="src/input.css" />
 </head>
-<body>
-    <!-- <h1 class="text-red-700 text-5xl font-extrabold">This is Testing text.........</h1> -->
-     <!------------ Navbar Section ------------->
 
-     <div class="w-full p-5 px-20 flex justify-between items-center">
-        <div class="w-1/4"><a href="#"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"></a></div>
-        <div class="w-2/4">
-            <ul class="flex justify-evenly">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Approach</a></li>
-                <li><a href="#">Industries</a></li>
-            </ul>
+<body>
+  <!------------ Navbar Section ------------->
+
+  <div class="w-full p-5 px-20 flex justify-between items-center">
+    <div class="w-1/4">
+      <a href="#"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo" /></a>
+    </div>
+    <div class="w-2/4">
+      <ul class="flex justify-evenly">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Approach</a></li>
+        <li><a href="#">Industries</a></li>
+      </ul>
+    </div>
+    <div class="w-1/4">
+      <div class="w-full flex justify-center items-center">
+        <button class="px-10 py-3 abcde border border-red-600">
+          Contact
+        </button>
+      </div>
+    </div>
+  </div>
+  <section class="bg h-[75vh] flex justify-center gap-7 items-center">
+    <div class="py-0 px-[60px] flex justify-center items-center gap-2">
+      <div class="w-[40%] h-[70%] flex flex-col items-center gap-[20px] ">
+        <h1 class="h3 fc-w text-center font-semibold leading-tight border-1 border-black">
+          Unleash Innovation with Rhosigma
+        </h1>
+        <p class="p-2 fc-w leading-tight font-medium text-center w-[95%]">
+          Transforming Ideas into Reality through Cutting-edge Electronic
+          Product Technology Development and Design Engineering.
+        </p>
+        <div class="text-center border bg-white text-[#2e5bab] py-2 px-9 w-fit m-auto rounded-lg font-semibold">
+          <a href="/services">Discover Services</a>
         </div>
-        <div class="w-1/4">
-            <div class="w-full flex justify-center items-center">
-                <button class="px-10 py-3 abcde border border-red-600">Contact</button>
-            </div>
+      </div>
+      <div class="w-[20%] h-[70%] flex justify-center border-1 border-black">
+        <img class="h-60 w-60" src="images/hero-image.webp" alt="image" widht="300" height="300" />
+      </div>
+      <div class="w-[40%] h-[70%] flex flex-col justify-center items-center gap-5 border-1 border-black">
+        <p class="h2 font-semibold fc-w">Innovative Excellence</p>
+        <p class="h2 font-semibold fc-w">Uncompromising Quality</p>
+        <p class="h2 font-semibold fc-w">Customer-Focused Dedication</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-we_areContainer pt-[50px] pb-[20px] flex flex-col gap-12">
+    <h2 class="h1">WHO WE ARE</h2>
+    <div class="grid grid-cols-2">
+      <div class="section-first flex flex-col gap-[30px]">
+        <p class="fc fs font-medium ff">
+          Where innovation meets excellence in the world of electronic
+          technology. Established with a passion for advancing the boundaries
+          of what's possible.
+        </p>
+        <p class="w-[88%] ff fc fs font-medium">
+          We are a dynamic company specializing in Electronic Product
+          Technology Development, Manufacturing, Aftersales Services, Supply
+          Chain Management, Design Engineering, Internet of Things (IoT),
+          Electronic Manufacturing Services (EMS), Defense, Telecommunication,
+          and Energy.
+        </p>
+        <button
+          class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] px-7 rounded-lg w-[37%] font-semibold fc-w fs">
+          Learn More
+        </button>
+      </div>
+      <div class="section-second grid grid-cols-2 gap-3">
+        <img class="rounded-lg w-[250px] h-[200px] object-cover" src="images/image1.webp" alt="image1" width="300"
+          height="200" />
+        <img class="rounded-lg w-[250px] h-[200px] object-cover" src="images/image2.webp" alt="image2" width="300"
+          height="200" />
+        <video class="rounded-lg w-[250px] h-[200px] object-cover" autoplay muted playsinline loop>
+          <source src="videos/drone.mp4" type="video/mp4" />
+        </video>
+        <img class="rounded-lg w-[250px] h-[200px] object-cover" src="images/image3.webp" alt="image3" width="300"
+          height="200" />
+      </div>
+    </div>
+  </section>
+
+  <section class="ccontainer pr-color mt-[50px] rounded-[20px] pb-[50px]">
+    <div class="ccontainer-content pt-[50px] flex flex-col">
+      <h3 class="h1 mb-[20px]">WHAT WE DO</h3>
+      <p class="fc fs font-medium w-[90%]">
+        Rhosigma is your go-to partner for electronic innovation. We're not
+        just a service provider; we're your dedicated ally, ensuring your
+        electronic aspirations become a reality with precision and innovation.
+      </p>
+
+      <div class="grid grid-cols-2 gap-5 mt-[50px] mb-[50px]">
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/firmware.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">Firmware Development</p>
+            <p class="fs">
+              Elevate your devices with bespoke firmware solutions tailored to
+              optimize performance and functionality.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
         </div>
-     </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4 p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/ai-ml.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2 gap-y-5">
+            <p class="h4 font-semibold ptag-c lineH">AI / ML</p>
+            <p class="fs line-clamp-5">
+              From concept to market, we bring your vision to life with
+              comprehensive and efficient product development services.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit gap-y-5"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4 p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/reverse-engineering_6.webp" alt="image6"
+            width="280" height="200" />
+          <div class="flex flex-col gap-2 gap-y-5">
+            <p class="h4 font-semibold ptag-c lineH">Reverse Engineering</p>
+            <p class="fs line-clamp-5">
+              Unlock the potential of existing technology with our expertise in
+              reverse engineering, revitalizing and enhancing your products.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/hardware-development.webp" alt="image6"
+            width="280" height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">Hardware Development</p>
+            <p class="fs line-clamp-5">
+              Unleash innovation through our meticulous hardware development,
+              crafting the backbone of cutting-edge electronic solutions.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/revolutionizing.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">HART</p>
+            <p class="fs line-clamp-5">
+              Unleash innovation through our meticulous hardware development,
+              crafting the backbone of cutting-edge electronic solutions.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+
+      </div>
+      <button
+        class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit">All
+        Services</button>
+    </div>
+    </div>
+  </section>
+
+
+  <footer class="ccontainer pr-color mt-[50px] rounded-[20px] h-[1000px]">
+    <div class="grid grid-cols-[0.7fr_1fr_0.9fr_2fr] gap-[30px] justify-end ccontainer-content pt-[75px] pb-[75px]">
+      <p class="font-semibold fs"> Follow Our Social Networks</p>
+      <div class="flex gap-[10px]">
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img class="" src="images/facebook-svgrepo-com.svg" alt="facebook-svgrepo-com" width="30" height="30">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img src="images/linkedin-svgrepo-com.svg" alt="linkedin-svgrepo-com" width="24" height="24">
+
+        </div>
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img src="images/youtube-you-tube-video-svgrepo-com.svg" alt="you-tube-image" width="24" height="24">
+
+        </div>
+        <div class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center">
+          <img src="images/youtube-you-tube-video-svgrepo-com.svg" alt="you-tube-image" width="24" height="24">
+
+        </div>
+      </div>
+      <p class="font-semibold fs">Be the First One to Hear About Updates</p>
+      <div class="mr-[20px]">
+        <label for="email">Email:</label>
+        <button
+          class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit ml-[40px]">Subscribe</button>
+      </div>
+
+
+    </div>
+    <hr class="footer-line footer-hr">
+  </footer>
 </body>
+
 </html>
