@@ -10,3 +10,88 @@ P1 --> 16px to 24px
 P2 --> 16px to 18px
 
 a --> 16px to 18px
+
+
+<section class="pc ccontainer pr-color mt-[50px] rounded-[20px] pb-[50px]">
+    <div class="ccontainer-content pt-[50px] flex flex-col">
+      <h3 class="h1 mb-[20px]">WHAT WE DO</h3>
+      <p class="fc fs font-medium w-[90%]">
+        Rhosigma is your go-to partner for electronic innovation. We're not
+        just a service provider; we're your dedicated ally, ensuring your
+        electronic aspirations become a reality with precision and innovation.
+      </p>
+
+      <div class="grid grid-cols-2 gap-5 mt-[50px] mb-[50px]">
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/firmware.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">Firmware Development</p>
+            <p class="fs">
+              Elevate your devices with bespoke firmware solutions tailored to
+              optimize performance and functionality.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4 p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/ai-ml.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2 gap-y-5">
+            <p class="h4 font-semibold ptag-c lineH">AI / ML</p>
+            <p class="fs line-clamp-5">
+              From concept to market, we bring your vision to life with
+              comprehensive and efficient product development services.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit gap-y-5"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4 p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/reverse-engineering_6.webp" alt="image6"
+            width="280" height="200" />
+          <div class="flex flex-col gap-2 gap-y-5">
+            <p class="h4 font-semibold ptag-c lineH">Reverse Engineering</p>
+            <p class="fs line-clamp-5">
+              Unlock the potential of existing technology with our expertise in
+              reverse engineering, revitalizing and enhancing your products.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/hardware-development.webp" alt="image6"
+            width="280" height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">Hardware Development</p>
+            <p class="fs line-clamp-5">
+              Unleash innovation through our meticulous hardware development,
+              crafting the backbone of cutting-edge electronic solutions.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 bg-white rounded-lg gap-4  p-[20px] justify-center">
+          <img class="rounded-lg w-full h-full object-cover" src="images/revolutionizing.webp" alt="image6" width="280"
+            height="200" />
+          <div class="flex flex-col gap-2">
+            <p class="h4 font-semibold ptag-c lineH">HART</p>
+            <p class="fs line-clamp-5">
+              Unleash innovation through our meticulous hardware development,
+              crafting the backbone of cutting-edge electronic solutions.
+            </p>
+            <a class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit"
+              href="">Explore</a>
+          </div>
+        </div>
+
+      </div>
+      <button
+        class="bg-gradient-to-r from-[#0d9de0] to-blue-700 py-[10px] pl-[40px] pr-[40px] rounded-lg font-semibold fc-w w-fit">All
+        Services</button>
+    </div>
+    </div>
+  </section>
