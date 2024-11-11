@@ -69,6 +69,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.contact-banner-img{
+    background-image: url(/asst/banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 @keyframes slideInFromTop {
     0% {
