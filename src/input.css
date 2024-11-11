@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root{
     --accent: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
@@ -65,6 +65,12 @@
 }
 .service-banner-img{
     background-image: url(/asst/service-banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.approach-banner-img{
+    background-image: url(/asst/approach-banner.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
