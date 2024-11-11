@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+</head>
+
+<body>
+    <!------- Navbar Section -------->
+
+    <div class="w-full p-5 px-20 flex justify-between items-center">
+        <div class="w-1/4"><a href="index.html"><img width="250" height="65" src="asst/rhosigma-logo.svg"
+                    alt="logo"></a></div>
+
+        <div class="w-full flex justify-evenly flex-row-reverse md:flex-row gap-10 md:gap-36">
+            <button id="menu-toggle" class=" text-gary-600 md:hidden focus:outline-none items-center">
+                <svg class="w-6 h-6 bg-gradient-to-r from-cyan-500 to-blue-500" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div id="menu" class="hidden md:flex w-full md:w-2/4 mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row items-center md:justify-evenly w-full space-y-4 md:space-y-0">
+                    <li><a href="about.html" class="uppercase tracking-wide pii">About Us</a></li>
+                    <li><a href="services.html" class="uppercase tracking-wide pii">Services</a></li>
+                    <li><a href="#" class="uppercase tracking-wide pii">Approach</a></li>
+                    <li><a href="#" class="uppercase tracking-wide pii">Industries</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 flex justify-end md:justify-end items-center md:items-start mt-4 md:mt-0">
+                <button
+                    class="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 pii tracking-wide text-white rounded-xl">Contact</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------- Services Hero ----------->
+    <div class="w-full h-[300px] md:h-[450px]">
+        <div
+            class="service-banner-img w-11/12 h-3/4 m-auto mt-10 md:mt-16 rounded-3xl flex justify-center items-center">
+            <h1 class="uppercase h1 text-white font-bold tracking-wide">services</h1>
+        </div>
+    </div>
+
+    <!-------- What We Do -------->
+    <div class="w-full -mt-20 pt-10">
+        <div class="w-full sm:w-11/12 m-auto py-10 rounded-3xl bg-blue-50">
+            <div class="w-10/12 m-auto">
+                <h2
+                    class="uppercase h1 font-medium bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                    What we do</h2>
+                <p class="pi">Rhosigma is your go-to partner for electronic innovation. We're not just a service
+                    provider; we're your dedicated ally, ensuring your electronic aspirations become a reality with
+                    precision and innovation.</p>
+            </div>
+            <div class="w-10/12 m-auto mt-10 grid grid-cols-1 sm:grid-cols-2 grid-rows-9 sm:grid-rows-5 gap-5">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/firmware-development_ (1).webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent leading-6">
+                            Firmware Development</p>
+                        <p class="pii leading-7">
+                            Elevate your devices with bespoke firmware solutions tailored to
+                            optimize performance and functionality.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/ai-ml.webp" alt="image6" width="280"
+                        height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            AI / ML</p>
+                        <p class="pii leading-7">
+                            From concept to market, we bring your vision to life with comprehensive
+                            and
+                            efficient product development services.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/reverse-engineering_6.webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            Reverse Engineering</p>
+                        <p class="pii leading-7">
+                            Unlock the potential of existing technology with our expertise in
+                            reverse
+                            engineering, revitalizing and enhancing your products.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/hardware-development (1).webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            Hardware Development</p>
+                        <p class="pii leading-7">
+                            Unleash innovation through our meticulous hardware development,
+                            crafting
+                            the backbone of cutting-edge electronic solutions.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/revolutionizing-telecommunications-infrastructure_6.webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            HART</p>
+                        <p class="pii leading-7">
+                            Unleash innovation through our meticulous hardware development,
+                            crafting
+                            the backbone of cutting-edge electronic solutions.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/design-engineering-1.webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            Design & Engineering</p>
+                        <p class="pii leading-7">
+                            Unleash innovation through our meticulous hardware development,
+                            crafting
+                            the backbone of cutting-edge electronic solutions.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/testing-quality.webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            Manufacturing Support</p>
+                        <p class="pii leading-7">
+                            Unleash innovation through our meticulous hardware development,
+                            crafting
+                            the backbone of cutting-edge electronic solutions.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/iot1.webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            IoT</p>
+                        <p class="pii leading-7">
+                            Unleash innovation through our meticulous hardware development,
+                            crafting
+                            the backbone of cutting-edge electronic solutions.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 bg-white rounded-lg gap-4 p-3 sm:p-5 justify-center">
+                    <img class="rounded-lg w-full h-full object-cover" src="asst/testing-1.webp"
+                        alt="image6" width="280" height="200" />
+                    <div class="flex flex-col gap-2">
+                        <p
+                            class="h4 capitalize font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                            Testing & Quality</p>
+                        <p class="pii leading-7">
+                            Unleash innovation through our meticulous hardware development,
+                            crafting
+                            the backbone of cutting-edge electronic solutions.
+                        </p>
+                        <button class="w-3/5 py-2 mt-5 rounded-xl bg-gradient-to-r from-[#0d9de0] to-blue-700"><a
+                                class="h4 text-white font-semibold" href="">Explore</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-------- Form Section -------->
+
+    <div class="w-full h-full mt-20">
+        <div class="w-11/12 sm:w-10/12 h-full m-auto flex flex-col md:flex-row gap-3">
+            <div class="w-full md:w-1/2 h-full p-2 sm:p-5 pl-0 sm:pl-10">
+                <h2 class="capitalize hlg leading-12 font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">ready to get your challenge solved ?</h2>
+                <p class="capitalize text-2xl mt-5 sm:mt-20">fill out the form, our team will connect with you!</p>
+                <div class="mt-5 sm:mt-36">
+                    <img src="asst/get-quote.webp" alt="">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 h-full rounded-lg sm:rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 p-5 sm:p-10">
+              <label for="" class="h5 text-white">Name</label><br/>
+              <input type="text" class="w-full px-5 py-3 rounded-lg pi font-extralight" required placeholder="Name">
+              <div class="flex flex-col sm:flex-row gap-5 my-10">
+                <div class="">
+                  <label for="" class="h5 text-white">Phone</label><br/>
+                  <input type="text" class="w-full px-5 py-3 rounded-lg pi font-extralight" required placeholder="Phone">
+                </div>
+                <div class="">
+                  <label for="" class="h5 text-white">Email</label><br/>
+                  <input type="text" class="w-full px-5 py-3 rounded-lg pi font-extralight" required placeholder="Email">
+                </div>
+              </div>
+              <textarea name="" id="" class="w-full px-5 py-3 rounded-lg pi font-extralight" cols="5" rows="4" placeholder="Message"></textarea>
+              <br/>
+              <button class="bg-white px-6 sm:px-10 py-2 sm:py-3 rounded-xl mt-5"><a href="" class="h4 font-medium bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Submit</a></button>
+            </div>
+        </div>
+     </div>
+
+     <!--------- Back To Top Button -------->
+     <div class="w-full mt-10">
+        <div class="w-11/12 m-auto bg-blue-50 rounded-lg sm:rounded-2xl">
+          <button class="w-full py-3 m-auto"><a href="#" class="capitalize h4 text-blue-800 font-medium">Back To Top</a></button>
+        </div>
+     </div>
+
+</body>
+
+</html>
