@@ -2,6 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* .normal-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto
+} */
+
 .first-container {
   width: 90%;
   margin: 0px auto;
@@ -12,6 +19,28 @@
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .who-we-are,
+  .footer-section,
+  .what-we-do,
+  .main-footer {
+    width: 100% !important;
+  }
+
+  .approach-section,
+  .industries-section {
+    width: 100% !important;
+    height: 210px !important;
+  }
+
+  .agile-section,
+  .waterfall-section {
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
 .what-we-do-container {
@@ -52,8 +81,6 @@
   --base-blue: #2e5bab;
   --primary: #ebf2fe;
   --secondary: #373737;
-  --white: #fff;
-  --black: black;
   --button-color: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
 
   --p-2: calc(clamp(1rem, 0.125vw + 0.975rem, 1.125rem));
@@ -64,7 +91,7 @@
   font-size: var(--h1);
 }
 
-.bg-img-container{
+.bg-img-container {
   border-radius: 20px;
   background-size: cover !important;
   background-position: center !important;
@@ -144,10 +171,6 @@
 .fs {
   font-size: var(--p-2);
   color: var(--secondary);
-}
-
-.fc-w {
-  color: var(--white);
 }
 
 .bg {
