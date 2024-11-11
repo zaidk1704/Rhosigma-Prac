@@ -10,29 +10,39 @@
 <body>
     <!------- Navbar Section -------->
 
-    <div class="w-full p-5 px-20 flex justify-between items-center">
-        <div class="w-1/4"><a href="index.html"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"></a></div>
+    <div class="w-11/12 m-auto h-20 md:w-11/12 p-3 sm:p-5 flex justify-between items-center shadow-lg shadow-blue-100">
+      <div class="w-3/5 sm:w-1/4 md:w-1/3"><a href="index.html"><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"></a></div>
 
-        <div class="w-full flex justify-between flex-row-reverse md:flex-row gap-10 md:gap-36">
-          <button id="menu-toggle" class=" text-gary-600 md:hidden focus:outline-none items-center">
+      <div class="w-2/5 sm:w-3/4 md:w-2/3 h-full flex sm:justify-between flex-row-reverse md:flex-row gap-5">
+        <div class="w-full h-full block flex justify-end md:hidden">
+          <button id="menu-toggle" class="w-10 h-10 text-gary-600 md:hidden focus:outline-none items-center">
             <svg class="w-6 h-6 bg-gradient-to-r from-cyan-500 to-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
-          <div id="menu" class="hidden md:flex w-full mt-4 md:mt-0">
-              <ul class="flex flex-col md:flex-row items-center md:justify-evenly w-full space-y-4 md:space-y-0">
-                  <li><a href="about.html" class="uppercase tracking-wide pii">About Us</a></li>
-                  <li><a href="services.html" class="uppercase tracking-wide pii">Services</a></li>
-                  <li><a href="#" class="uppercase tracking-wide pii">Approach</a></li>
-                  <li><a href="#" class="uppercase tracking-wide pii">Industries</a></li>
-              </ul>
-          </div>
-          <div class="w-full md:w-1/4 flex justify-end md:justify-end items-center md:items-start mt-4 md:mt-0">
-              <button class="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 pii tracking-wide text-white rounded-xl">Contact</button>
-          </div>
         </div>
-     </div>
-
+        <div id="" class="hidden md:flex w-full mt-0 sm:mt-4 md:mt-0">
+            <ul class="bg-white sm:bg-none flex flex-col md:flex-row items-center md:justify-evenly w-full space-y-4 md:space-y-0">
+                <li><a href="about.html" class="uppercase tracking-wide pii">About Us</a></li>
+                <li><a href="services.html" class="uppercase tracking-wide pii">Services</a></li>
+                <li><a href="#" class="uppercase tracking-wide pii">Approach</a></li>
+                <li><a href="#" class="uppercase tracking-wide pii">Industries</a></li>
+            </ul>
+        </div>
+        <div id="menu" class="hidden">
+          <ul class="bg-white sm:bg-none flex flex-col space-y-4">
+              <li><a href="about.html" class="uppercase tracking-wide pii">About Us</a></li>
+              <li><a href="services.html" class="uppercase tracking-wide pii">Services</a></li>
+              <li><a href="#" class="uppercase tracking-wide pii">Approach</a></li>
+              <li><a href="#" class="uppercase tracking-wide pii">Industries</a></li>
+              <li><a href="#" class="uppercase tracking-wide pii">Contact</a></li>
+          </ul>
+      </div>
+        <div class="w-full md:w-1/4 hidden sm:block flex justify-end md:justify-end items-center md:items-start md:mt-0">
+            <button class="px-5 sm:px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 pii tracking-wide text-white rounded-xl"><a href="" class="">Contact</a></button>
+        </div>
+      </div>
+   </div>
      <!--------- About Hero  --------->
 
      <div class="w-full h-[300px] md:h-[450px] bg00">
@@ -54,12 +64,12 @@
             </p>
           </div>
           <div class="w-full sm:w-2/6 h-4/5 sm:h-full mt-5 sm:mt-0">
-            <div class="w-11/12 h-1/3 bg-gradient-to-r from-cyan-500 to-blue-600 p-2 sm:p-5 rounded-xl m-auto flex justify-center items-center">
-              <img src="asst/award.svg" width="100" height="100" alt="">
+            <div class="w-11/12 h-1/3 bg-gradient-to-r from-cyan-500 to-blue-600 p-2 sm:p-5 rounded-xl m-auto flex justify-center items-center gap-5">
+              <img src="asst/award.svg" width="80" height="80" alt="">
               <p class="h4 text-center text-white w-44 leading-6">The Best Industrial Solution Provider</p>
             </div>
-            <div class="w-11/12 h-1/3 bg-gradient-to-r from-cyan-500 to-blue-600 p-2 sm:p-5 rounded-xl m-auto mt-5 flex justify-center items-center">
-              <img src="asst/certified.svg" width="100" height="100" alt="">
+            <div class="w-11/12 h-1/3 bg-gradient-to-r from-cyan-500 to-blue-600 p-2 sm:p-5 rounded-xl m-auto mt-5 flex justify-center items-center gap-5">
+              <img src="asst/certified.svg" width="80" height="80" alt="">
               <p class="h4 text-center text-white w-44 leading-6">Certified By Many Accreditation Bodies</p>
             </div>
           </div>
@@ -183,9 +193,104 @@
 
      <!--------- Back To Top Button -------->
      <div class="w-full mt-10">
-        <div class="w-11/12 m-auto bg-blue-50 rounded-lg sm:rounded-2xl">
+        <div class="w-11/12 sm:w-10/12 m-auto bg-blue-50 rounded-lg sm:rounded-2xl">
           <button class="w-full py-3 m-auto"><a href="#" class="capitalize h4 text-blue-800 font-medium">Back To Top</a></button>
         </div>
      </div>
+
+      <!--------- Footer Section -------->
+
+    <section class="w-full mt-5">
+      <div class="w-11/12 md:w-10/12 m-auto bg-blue-50 rounded-t-2xl">
+        <div class="w-full sm:w-11/12 m-auto p-10 py-20 pb-10 sm:pb-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-4 sm:grid-rows-2 md:grid-rows-1 gap-5">
+          <p class="h5 font-semibold">Follow Our<br class="hidden sm:block"/> Social<br class="hidden sm:block"/> Networks</p>
+          <div class="flex gap-5">
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center items-center cursor-pointer">
+              <a href="#"><img class="" src="asst/facebook-svgrepo-com.svg" alt="facebook-svgrepo-com" width="30"
+                  height="30" /></a>
+            </div>
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center items-center cursor-pointer">
+              <a href="#"><img src="asst/linkedin-svgrepo-com.svg" alt="linkedin-svgrepo-com" width="25"
+                  height="25" /></a>
+            </div>
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center items-center cursor-pointer">
+              <a href="#"><img src="asst/youtube-play-svgrepo-com.svg" alt="you-tube-image" width="30"
+                  height="30" /></a>
+            </div>
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center items-center cursor-pointer">
+              <a href="#"><img src="asst/instagram-svgrepo-com.svg" alt="you-tube-image" width="25" height="25" /></a>
+            </div>
+          </div>
+          <p class="h5 font-semibold">Be the First One<br class="hidden sm:block"/> to Hear About<br class="hidden sm:block"/> Updates</p>
+
+          <form class="flex flex-col gap-3">
+            <input class="py-1 px-2 border-1 border-slate-600 outline-none flex w-[80%] rounded-lg" type="email"
+              name="email" id="email" disabled placeholder="Email" />
+            <button
+              class="w-3/5 text-white bg-gradient-to-r from-[#0d9de0] to-blue-700 px-7 py-2 rounded-lg font-semibold">
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <hr class="w-4/5 h-0 m-auto bg-gray-200"/>
+      </div>
+
+
+      <footer class="w-11/12 md:w-10/12 m-auto px-5 sm:px-20 py-10 rounded-b-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-3 sm:grid-rows-2 md:grid-rows-1 bg-blue-50">
+        <div class="w-full col-span-1 sm:col-span-2 md:col-span-1">
+          <img src="asst/rhosigma-logo.svg" alt="logo-rhosigma" width="380" height="380" />
+          <p class="w-full pii tracking-tight font-normal pt-5">
+            Where innovation meets excellence in the world of electronic
+            technology. Established with a passion for advancing the boundaries
+            of what's possible.
+          </p>
+        </div>
+        <div class="w-full flex justify-start md:justify-center items-center ">
+          <ul class="flex flex-col gap-3">
+            <li class="pii font-normal">Blogs</li>
+            <li class="pii font-normal">Careers</li>
+            <li class="pii font-normal">Case Studies</li>
+            <li class="pii font-normal">Design Partners</li>
+          </ul>
+        </div>
+        <div class="w-full grid grid-cols-1">
+          <div class="flex items-center gap-4">
+            <div
+              class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center cursor-pointer">
+              <img src="asst/call-receive-svgrepo-com (1).svg" alt="email-image" width="24" height="24" />
+            </div>
+            <div>
+              <p class="pii font-medium bg-gradient-to-r from-[#0d9de0] to-blue-700 bg-clip-text text-transparent">+91 86555 87403</p>
+              <p class="pii font-medium bg-gradient-to-r from-[#0d9de0] to-blue-700 bg-clip-text text-transparent">/ +91 80973 90322</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div
+              class="w-[40px] h-[40px] rounded-[10px] bg-gradient-to-r from-[#0d9de0] to-blue-700 flex justify-center cursor-pointer">
+              <img src="asst/mail-svgrepo-com (1).svg" alt="email-image" width="24" height="24" />
+            </div>
+            <p class="pii font-medium bg-gradient-to-r from-[#0d9de0] to-blue-700 bg-clip-text text-transparent">info@rhosigma.in</p>
+          </div>
+
+          <p class="pii tracking-wide font-normal mt-[20px]">
+            602-B, Virani Business Center, Opp Bharat Gears Limited, Kausa
+            Mumbra, Thane 400612.
+          </p>
+        </div>
+
+
+      </footer>
+    </section>
+
+    <section class="w-11/12 sm:w-10/12 m-auto my-5 text-center flex flex-col sm:flex-row justify-evenly items-center gap-5 p-4 rounded-2xl bg-blue-50">
+      <p class="pii text-gray-600">© 2020 - 2024 Rhosigma - All Rights Reserved</p>
+      <p class="pii text-gray-600">Designed & Maintained by <b>Sovorun</b></p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

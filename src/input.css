@@ -15,7 +15,7 @@
     --h5:clamp(1.125rem, 0.25vw + 1.075rem, 1.375rem);
     --h6:clamp(1rem, 0.25vw + 0.95rem, 1.25rem);
     --pi:clamp(1rem, 0.5vw + 0.9rem, 1.5rem);
-    --pi-1:clamp(1.125rem, 0.547vw + 1.016rem, 1.563rem);
+    --pi-1:(1rem, 0.5vw + 0.9rem, 1.5rem);
     --pii:clamp(1rem, 0.125vw + 0.975rem, 1.125rem);
     --ant:clamp(1rem, 0.125vw + 0.975rem, 1.125rem);
 }

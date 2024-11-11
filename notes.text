@@ -60,3 +60,7 @@ a --> 16px to 18px
 .ant{
     font-size: var(--ant);
 }
+
+<p class="text-center fs font-medium">Terms of Use</p>
+        <p class="fs font-medium">Privacy Policy</p>
+        <p class="text-center fs font-medium">Sitemap</p>
