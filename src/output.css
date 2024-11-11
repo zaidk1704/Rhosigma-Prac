@@ -1100,22 +1100,6 @@ video {
   font-weight: 600;
 }
 
-.font-\[20px\] {
-  font-weight: 20px;
-}
-
-.font-\[25px\] {
-  font-weight: 25px;
-}
-
-.font-\[28px\] {
-  font-weight: 28px;
-}
-
-.font-\[30px\] {
-  font-weight: 30px;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1162,6 +1146,22 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-slate-500\/40 {
+  --tw-shadow-color: rgb(100 116 139 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-200\/40 {
+  --tw-shadow-color: rgb(226 232 240 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .outline-none {
@@ -1482,10 +1482,6 @@ video {
   .sm\:text-start {
     text-align: start;
   }
-
-  .sm\:font-\[20px\] {
-    font-weight: 20px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1618,10 +1614,6 @@ video {
 
   .md\:text-center {
     text-align: center;
-  }
-
-  .md\:font-\[20px\] {
-    font-weight: 20px;
   }
 }
 
