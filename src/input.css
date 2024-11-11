@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-    --base-blue: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
+    --accent: linear-gradient(111deg, #0d9de0 0%, #2e5bab 100%);
     --primary: #ebf2fe;
     --seondary: #373737;
     --white: #fff;
@@ -18,8 +18,8 @@
     --pii:clamp(1rem, 0.125vw + 0.975rem, 1.125rem);
     --ant:clamp(1rem, 0.125vw + 0.975rem, 1.125rem);
 }
-.base-blue{
-    background-color: var(--base-blue);
+.accent{
+    background-color: var(--accent);
 }
 .hlg{
     font-size: var(--hlg);
@@ -64,4 +64,34 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToTop {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.slide-in {
+    animation: slideInFromTop 0.4s ease-out forwards;
+}
+
+.slide-out {
+    animation: slideOutToTop 0.4s ease-in forwards;
 }
