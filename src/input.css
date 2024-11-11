@@ -81,6 +81,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.industries-banner-img{
+    background-image: url(/asst/industries-banner_6.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 @keyframes slideInFromTop {
     0% {
