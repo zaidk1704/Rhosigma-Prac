@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!------- Navbar Section -------->
+
+    <div class="w-full p-5 px-20 flex justify-between items-center">
+      <div class="w-1/4">
+        <a href="index.html"
+          ><img width="250" height="65" src="asst/rhosigma-logo.svg" alt="logo"
+        /></a>
+      </div>
+
+      <div
+        class="w-full flex justify-evenly flex-row-reverse md:flex-row gap-10 md:gap-36"
+      >
+        <button
+          id="menu-toggle"
+          class="text-gary-600 md:hidden focus:outline-none items-center"
+        >
+          <svg
+            class="w-6 h-6 bg-gradient-to-r from-cyan-500 to-blue-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <div id="menu" class="hidden md:flex w-full md:w-2/4 mt-4 md:mt-0">
+          <ul
+            class="flex flex-col md:flex-row items-center md:justify-evenly w-full space-y-4 md:space-y-0"
+          >
+            <li>
+              <a href="about.html" class="uppercase tracking-wide pii"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="services.html" class="uppercase tracking-wide pii"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="approach.html" class="uppercase tracking-wide pii">Approach</a>
+            </li>
+            <li>
+              <a href="industries.html" class="uppercase tracking-wide pii">Industries</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full md:w-1/4 flex justify-end md:justify-end items-center md:items-start mt-4 md:mt-0"
+        >
+          <button
+            class="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 pii tracking-wide text-white rounded-xl"
+          >
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--------- About Hero  --------->
+
+    <div class="w-full h-[300px] md:h-[450px] bg00">
+      <div
+        class="about-banner-img w-11/12 h-3/4 m-auto mt-10 md:mt-16 rounded-3xl flex justify-center items-center"
+      >
+        <h1 class="uppercase h1 text-white font-bold tracking-wide">
+          About Us
+        </h1>
+      </div>
+    </div>
+
+    <!-------- Award Section -------->
+
+    <div class="w-full h-auto sm:h-[750px] pt-5">
+      <div class="w-11/12 sm:w-10/12 h-3/5 m-auto flex flex-col sm:flex-row">
+        <div class="w-full sm:w-4/6 h-full pl-0 sm:pl-5">
+          <p class="pi">
+            At Rhosigma, we pride ourselves on staying at the forefront of
+            technological advancement. Our commitment to delivering unparalleled
+            solutions is underscored by the strategic integration of
+            cutting-edge technologies. From state-of-the-art AI and ML
+            applications to advanced IoT solutions, our portfolio is a testament
+            to the transformative power of innovation. As we continuously
+            explore new horizons, our use of industry-leading technologies
+            ensures that our clients receive not only solutions tailored to
+            their needs but also a glimpse into the future of electronic
+            innovation.
+          </p>
+          <br />
+          <p class="pi">
+            We are a dynamic company specializing in Electronic Product
+            Technology Development, Manufacturing, Aftersales Services, Supply
+            Chain Management, Design Engineering, Internet of Things (IoT),
+            Electronic Manufacturing Services (EMS), Defense, Telecommunication,
+            and Energy.
+          </p>
+        </div>
+        <div class="w-full sm:w-2/6 h-4/5 sm:h-full mt-5 sm:mt-0">
+          <div
+            class="w-11/12 h-1/3 bg-gradient-to-r from-cyan-500 to-blue-600 p-2 sm:p-5 rounded-xl m-auto flex justify-center items-center"
+          >
+            <img src="asst/award.svg" width="100" height="100" alt="" />
+            <p class="h4 text-center text-white w-44 leading-6">
+              The Best Industrial Solution Provider
+            </p>
+          </div>
+          <div
+            class="w-11/12 h-1/3 bg-gradient-to-r from-cyan-500 to-blue-600 p-2 sm:p-5 rounded-xl m-auto mt-5 flex justify-center items-center"
+          >
+            <img src="asst/certified.svg" width="100" height="100" alt="" />
+            <p class="h4 text-center text-white w-44 leading-6">
+              Certified By Many Accreditation Bodies
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-10/12 h-2/5 m-auto mt-5 sm:mt-0 px-0 sm:px-5 grid grid-cols-2 sm:grid-cols-4 grid-rows-2 sm:grid-rows-1 gap-3 justify-center items-center"
+      >
+        <div class="h-full sm:h-3/4">
+          <img
+            src="asst/firmware-development.webp"
+            class="rounded-xl h-full object-cover w-full"
+            width="265"
+            height="250"
+            alt=""
+          />
+        </div>
+        <div class="h-full sm:h-3/4">
+          <img
+            src="asst/who-we-are-img-2_6.webp"
+            class="rounded-xl h-full object-cover w-full"
+            width="265"
+            height="200"
+            alt=""
+          />
+        </div>
+        <div class="h-full sm:h-3/4">
+          <video
+            src="asst/drone.mp4"
+            class="rounded-xl h-full object-cover w-full"
+            width="265"
+            height="200"
+            autoplay
+            muted
+            playsinline
+            loop
+          ></video>
+        </div>
+        <div class="h-full sm:h-3/4">
+          <img
+            src="asst/who-we-are-img-3_6.webp"
+            class="rounded-xl h-full object-cover w-full"
+            width="265"
+            height="200"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-------- Vision Mission Section --------->
+    <div class="w-full h-auto mt-20">
+      <div
+        class="w-11/12 sm:w-10/12 m-auto flex flex-col sm:flex-row gap-10 p-2 sm:p-5"
+      >
+        <div class="w-full sm:w-1/2">
+          <h2
+            class="uppercase h1 font-medium tracking-wide bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+          >
+            Mission
+          </h2>
+          <h3 class="capitalize h3 font-semibold tracking-wide">
+            Empowering Innovation, Transforming Futures
+          </h3>
+          <p class="pi mt-5 leading-7">
+            At Rhosigma, our mission is to empower innovation, serving as
+            catalysts for transformative change in the electronic technology
+            landscape. We strive to provide cutting-edge solutions that not only
+            meet but exceed the evolving needs of our clients.
+            <br />
+            <br />
+            Through our commitment to excellence, we aim to foster an
+            environment where innovation flourishes, ideas come to life, and our
+            clients embark on a journey of sustained success.
+          </p>
+        </div>
+        <div class="w-full sm:w-1/2 pl-0 sm:pl-10">
+          <h2
+            class="uppercase h1 font-medium tracking-wide bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+          >
+            vision
+          </h2>
+          <h3 class="capitalize h3 font-semibold tracking-wide">
+            Pioneering Excellence in Electronic Solutions
+          </h3>
+          <p class="pi mt-5 leading-7">
+            Our vision at Rhosigma is to be at the forefront of pioneering
+            excellence in electronic solutions. We envision a future where our
+            innovative technologies and tailored services redefine industry
+            standards, setting new benchmarks for quality and efficiency.
+            <br />
+            <br />
+            With a commitment to sustainable practices and continuous
+            improvement, we aspire to be the go-to partner for organizations
+            seeking to navigate the complexities of the digital era.
+            <br />
+            <br />
+            Rhosigma envisions a world where electronic possibilities are
+            limitless, and our solutions stand as a testament to pioneering
+            excellence.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-------- Company Speciality Section -------->
+    <div class="w-full mt-14">
+      <div class="w-full sm:w-11/12 m-auto pt-5 sm:rounded-3xl bg-blue-50">
+        <div
+          class="w-10/12 m-auto mt-10 p-0 sm:p-5 grid grid-cols-1 sm:grid-cols-2 grid-rows-6 sm:grid-rows-3 gap-5 sm:gap-10"
+        >
+          <div class="p-5 mt-10 sm:mt-0">
+            <h2
+              class="uppercase h2 font-medium bg-gradient-to-r from bg-cyan-500 to-blue-500 bg-clip-text text-transparent"
+            >
+              Innovation
+            </h2>
+            <h3 class="capitalize h4 font-medium">
+              We Foster Creative Excellence
+            </h3>
+            <p class="pii tracking-wide leading-6 font-normal">
+              Innovation is at the heart of Rhosigma. We embrace curiosity,
+              encourage creativity, and continually seek groundbreaking
+              solutions.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl sm:rounded-2xl p-5">
+            <h2
+              class="uppercase h2 font-medium bg-gradient-to-r from bg-cyan-500 to-blue-500 bg-clip-text text-transparent"
+            >
+              Integrity
+            </h2>
+            <h3 class="capitalize h4 font-medium">
+              We Uphold Ethical Excellence
+            </h3>
+            <p class="pii tracking-wide leading-6 font-normal">
+              We prioritize transparency, honesty, and ethical conduct in every
+              endeavor, ensuring trust and reliability in all our relationships.
+            </p>
+          </div>
+
+          <div class="p-5">
+            <h2
+              class="uppercase h2 font-medium bg-gradient-to-r from bg-cyan-500 to-blue-500 bg-clip-text text-transparent"
+            >
+              Collaboration
+            </h2>
+            <h3 class="capitalize h4 font-medium">We Thrive Together</h3>
+            <p class="pii tracking-wide leading-6 font-normal">
+              We bring together the strengths of our team to deliver exceptional
+              results and support one another's growth.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl sm:rounded-2xl p-5">
+            <h2
+              class="uppercase h2 font-medium bg-gradient-to-r from bg-cyan-500 to-blue-500 bg-clip-text text-transparent"
+            >
+              Client-Centricity
+            </h2>
+            <h3 class="capitalize h4 font-medium">
+              We Prioritize Your Success
+            </h3>
+            <p class="pii tracking-wide leading-6 font-normal">
+              By placing the client at the center of everything we do, we ensure
+              that our solutions not only meet expectations but exceed them.
+            </p>
+          </div>
+
+          <div class="p-5">
+            <h2
+              class="uppercase h2 font-medium bg-gradient-to-r from bg-cyan-500 to-blue-500 bg-clip-text text-transparent"
+            >
+              Excellence
+            </h2>
+            <h3 class="capitalize h4 font-medium">Continuous Improvement</h3>
+            <p class="pii tracking-wide leading-6 font-normal">
+              We are committed to continuous learning, improvement, and the
+              pursuit of the highest quality in all aspects of our work.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl sm:rounded-2xl p-5">
+            <h2
+              class="uppercase h2 font-medium bg-gradient-to-r from bg-cyan-500 to-blue-500 bg-clip-text text-transparent"
+            >
+              Accountability
+            </h2>
+            <h3 class="capitalize h4 font-medium">We Take Ownership</h3>
+            <p class="pii tracking-wide leading-6 font-normal">
+              By being accountable, we ensure that our commitments are met, and
+              we contribute positively to the success of our team and clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------- Form Section -------->
+
+    <div class="w-full h-full mt-10">
+      <div
+        class="w-11/12 sm:w-10/12 h-full m-auto flex flex-col sm:flex-row gap-3"
+      >
+        <div class="w-full sm:w-1/2 h-full p-2 sm:p-5 pl-0 sm:pl-10">
+          <h2
+            class="capitalize hlg leading-12 font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+          >
+            ready to get your challenge solved ?
+          </h2>
+          <p class="capitalize text-2xl mt-5 sm:mt-20">
+            fill out the form, our team will connect with you!
+          </p>
+          <div class="mt-5 sm:mt-36">
+            <img src="asst/get-quote.webp" alt="" />
+          </div>
+        </div>
+        <div
+          class="w-full sm:w-1/2 h-full rounded-lg sm:rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 p-5 sm:p-10"
+        >
+          <label for="" class="h5 text-white">Name</label><br />
+          <input
+            type="text"
+            class="w-full px-5 py-3 rounded-lg pi font-extralight"
+            required
+            placeholder="Name"
+          />
+          <div class="flex flex-col sm:flex-row gap-5 my-10">
+            <div class="">
+              <label for="" class="h5 text-white">Phone</label><br />
+              <input
+                type="text"
+                class="w-full px-5 py-3 rounded-lg pi font-extralight"
+                required
+                placeholder="Phone"
+              />
+            </div>
+            <div class="">
+              <label for="" class="h5 text-white">Email</label><br />
+              <input
+                type="text"
+                class="w-full px-5 py-3 rounded-lg pi font-extralight"
+                required
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <textarea
+            name=""
+            id=""
+            class="w-full px-5 py-3 rounded-lg pi font-extralight"
+            cols="5"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+          <br />
+          <button class="bg-white px-6 sm:px-10 py-2 sm:py-3 rounded-xl mt-5">
+            <a
+              href=""
+              class="h4 font-medium bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+              >Submit</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--------- Back To Top Button -------->
+    <div class="w-full mt-10">
+      <div class="w-11/12 m-auto bg-blue-50 rounded-lg sm:rounded-2xl">
+        <button class="w-full py-3 m-auto">
+          <a href="#" class="capitalize h4 text-blue-800 font-medium"
+            >Back To Top</a
+          >
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
